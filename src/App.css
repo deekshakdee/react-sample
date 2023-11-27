@@ -1,38 +1,112 @@
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #f0f0f0;
+
+  font-family: Arial, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+
+.Sidebar {
+  display: flex;
+
+  color: #fff;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes App-logo-spin {
+.HeaderBar {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+}
+
+
+.SidebarList {
+  list-style-type: none;
+  padding: 0%;
+  display: flex;
+  background-color: none;
+}
+
+.SidebarList li {
+  margin-bottom: 10px;
+}
+
+.SidebarList a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+.SidebarList a:hover {
+  text-decoration: underline;
+}
+
+
+.centered-content {
+  flex: 1;
+  padding: 20px;
+}
+.HomeS{
+  padding-left: 70px;
+  padding-right:70px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+.TodoS{
+  padding-left: 70px;
+  padding-right:70px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+.SearchS{
+  padding-left: 70px;
+  padding-right:70px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+.LoginS{
+  padding-left: 70px;
+  padding-right:70px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+.LoginS{
+  height: 10px;
+  width: 20px;
+}
+.InputLoginS{
+  height: 10px;
+  width: 10px;
+}
+
+.LoginUser{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+/* Define the animation */
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 1;
+    transform: translateX(-300px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateX(0);
   }
+}
+
+
+.card-animation {
+  animation-name: fadeIn;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-delay:0s ;
+  animation-iteration-count: 1;
+  animation-direction:normal;
+  animation-fill-mode:  none;
+  /*animation: fadeIn 1s ease-in 1s 1 normal both;*/
 }
